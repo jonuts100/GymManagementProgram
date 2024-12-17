@@ -3,15 +3,33 @@ import java.time.*;
 public class Member {
 	private String name;
 	private Integer age;
+	private String id;
 	private LocalDate firstSignUpDate;
-	
-	public Member(String name,Integer age) {
+	private Package memPackage;
+	public Member(String name,Integer age,String ID) {
 		// TODO Auto-generated constructor stub
 		setName(name);
 		setAge(age);
+		setId(ID);
 		this.firstSignUpDate = LocalDate.now();
 	}
 	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Package getMemPackage() {
+		return memPackage;
+	}
+
+	public void setMemPackage(Package memPackage) {
+		this.memPackage = memPackage;
+	}
+
 	public String getTier() {
 		return "Basic";
 	}

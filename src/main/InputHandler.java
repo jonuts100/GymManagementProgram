@@ -3,6 +3,7 @@ import java.util.*;
 public class InputHandler {
 	Scanner scan = new Scanner(System.in);
 	AppendData addData = new AppendData();
+	
 	public String getStringInput(String text) {
 		System.out.print(text);
 		return scan.nextLine();
@@ -56,7 +57,7 @@ public class InputHandler {
 					}
 					systems(management,i-1);
 				break;
-				case "2":
+				case "2"://MASUKKIN APPEND
 					n = getStringInput("Please register the gym's location : ");
 					
 					management.getLocationList().add(new GymProgram(n));
@@ -64,6 +65,7 @@ public class InputHandler {
 					System.out.println();
 					break;
 				case "3":
+					//DELETE LOCATION DISINI
 					
 					break;
 				case "4":
@@ -79,6 +81,14 @@ public class InputHandler {
 	
 		}
 	}
+	/*
+	 ______________________________________________
+	 | No. | Name  | Age | Sign Up Date | Package |
+	 ______________________________________________
+	 | 1.  | jonut | 20  | 20/11/24     | Package A |
+	 _______________________________________________
+	 
+	 */
 	
 	public void systems(LocationManagement management,Integer idx) {
 		String n;
@@ -138,14 +148,6 @@ public class InputHandler {
 				cls();
 			}
 		}
-	}
-	
-	public void addMenu(ArrayList<Member> x) {
-		System.out.println("babi member");
-	}
-	
-	public void addMenu(ArrayList<Packages> x) {
-		System.out.println("Pack");
 	}
 	
 	public Member addMember() {

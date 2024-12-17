@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class GoldMember extends Member {
 	private ArrayList<String> enrolledClasses = new ArrayList<String>();
 	private Integer PT_sessions;
-	public GoldMember(String name, Integer age) {
+	public GoldMember(String name, Integer age,String ID) {
 		// TODO Auto-generated constructor stub
-		super(name,age);
+		super(name,age,ID);
 		PT_sessions = 3;
 	}
 	
